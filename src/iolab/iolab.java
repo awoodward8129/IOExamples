@@ -24,6 +24,13 @@ public class iolab {
      BufferedReader in = null;
         List<Customer> customers = new ArrayList<>();
      Customer customer = null;
+     
+     try(PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(file, true)))) {
+    out.println("Alex Woodward \n 259 Lakeridge Dr. \nOconomowoc WI 53066");
+}catch (IOException e) {
+    //exception handling left as an exercise for the reader
+}
+     
      int counter = 0;
         try {
 	   in = new BufferedReader(new FileReader(file));
