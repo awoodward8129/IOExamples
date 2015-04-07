@@ -1,9 +1,13 @@
-Sally Jones
-1234 Anywhere St.
-Milwaukee, WI 53202
-Bob Smith
-444 Elm St.
-Chicago, IL 60612
+heads,tails,tails,heads,heads,tails
+1,2,3,4,5,6,8,9,0
+
+
+List<Map<String,String>> datapoints = new List<>();
+Map<String,String> data = new HashMap<>();
+data.put("temp",72.5);
+data.put("humidity",.30);
+data.put("date",1/12/2015);
+datapoints.add(data);
 
 
 
